@@ -8,7 +8,24 @@ function fetchConsulta() {
         .then((response) => {
             response.json()
             .then((data) => {
-                respFetch.innerHTML = data;
+                let html = "";
+                html += "<ul>";
+
+                for(let i in data) {
+                    html += `<li>
+                        <div class="container">
+                            <div class="avatar">${data[i].id}</div>
+                            <div class="post" style="text-transform: capitalize;">
+                                <h1>${data[i].userId}</h1>
+                                <h2 style="text-transform: capitalize;">${data[i].title}</h2>
+                                <p>${data[i].body}</p>
+                            </div>
+                        </div>
+                    </li>`
+                };
+
+                html += "</ul>";
+                respFetch.innerHTML = html;
             })
             .catch((err) => {
                 respFetch.innerHTML = `Deu erro na hora de transformar a string JSON em Objeto e o erro foi: ${err}`;

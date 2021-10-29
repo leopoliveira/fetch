@@ -14,3 +14,8 @@ button {
     cursor: pointer;
     font-size: 1.4rem;
 }
+
+#respFetch {
+    margin: 2rem;
+    font-size: 1.5rem;
+}
