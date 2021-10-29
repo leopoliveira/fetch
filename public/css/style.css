@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+button {
+    padding: .4rem;
+    margin: 2rem;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
