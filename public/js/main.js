@@ -14,11 +14,11 @@ function fetchConsulta() {
                 for(let i in data) {
                     html += `<li>
                         <div class="container">
-                            <div class="avatar">${data[i].id}</div>
-                            <div class="post" style="text-transform: capitalize;">
-                                <h1>${data[i].userId}</h1>
-                                <h2 style="text-transform: capitalize;">${data[i].title}</h2>
+                            <div class="avatar">${data[i].userId}</div>
+                            <div class="postBody" style="text-transform: capitalize;">
+                                <h1 style="text-transform: capitalize;">${data[i].title}</h1>
                                 <p>${data[i].body}</p>
+                                <span>Question ID: ${data[i].id}</span>
                             </div>
                         </div>
                     </li>`

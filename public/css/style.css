@@ -2,6 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #B5F8FE;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -9,13 +16,85 @@ html {
 }
 
 button {
-    padding: .4rem;
+    padding: .8rem;
     margin: 2rem;
     cursor: pointer;
     font-size: 1.4rem;
+    background-color: #EADAA2;
+    border-color: #EADAA2;
+    font-weight: bold;
+    color: #241E4E;
+}
+
+button:hover {
+    background-color: #CE6C47;
+    border-color: #CE6C47;
+    color: #EDF7F6;
 }
 
 #respFetch {
     margin: 2rem;
     font-size: 1.5rem;
+}
+
+/* Estilizando os posts (respostas do Fetch) */
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60vw;
+    margin: 2rem;
+    position: relative;
+    background-color: #358597;
+    color: #EDF7F6;
+    border-radius: 20px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #EDF7F6;
+    color: #56351E;
+    border: 1px solid #000;
+    border-radius: 50%;
+    padding: .5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    top: 1rem; left: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.postBody {
+    margin-left: 3.5em;
+}
+
+.postBody h1 {
+    color: #F4A896;
+    padding: 1rem;
+}
+
+.postBody p {
+    padding: 2rem;
+    line-height: 1.5;
+    text-transform: lowercase;
+}
+
+.postBody p::first-letter {
+    text-transform: uppercase;
+}
+
+span {
+    position: absolute;
+    bottom: 1rem; right: 1rem;
+    font-size: 1rem;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+span:hover {
+    color: #F4A896;
 }
